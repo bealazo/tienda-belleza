@@ -45,7 +45,7 @@ export const Home=()=>{
        //hago un dispatch para resetear el user
        dispatch(unsetUser());
        //navego al index
-       navigate("/")
+       navigate("/index")
    }
 
    //Función para navegar a Products para mostrar el listado de productos de acuerdo a la categoria

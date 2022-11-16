@@ -22,7 +22,7 @@ function App() {
     <div className="d-flex row" style={{width:"100vw", margin:"auto"}}>
     
       <div className="nav bg-dark justify-content-end">
-        <Link to="/" className="nav-link text-white">ENTRAR</Link>
+        <Link to="/index" className="nav-link text-white">ENTRAR</Link>
         <Link to="/home" className="nav-link text-white">INICIO</Link>
         <button type="button" className="btn position-relative" onClick={()=>navigate("/cart")}>
           <i className="bi bi-cart-fill text-white h5"></i>
@@ -31,7 +31,7 @@ function App() {
       </div>
      
       <Routes>
-        <Route path="/" element={<Index/>}/>
+        <Route path="/index" element={<Index/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/products" element={<Products/>}/>
